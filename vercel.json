@@ -1,9 +1,10 @@
 {
+    "name": "node-mongodb",
     "version":2,
-    "public":2,
+    "public":true,
     "builds":[
         {
-            "src":"src/server.js",
+            "src":"./server.js",
             "use":"@vercel/node"
 
         }
@@ -11,7 +12,7 @@
     "routes":[
         {
             "src":"/(.*)",
-            "dest":"src/server.js"
+            "dest":"./server.js"
         }
     ]
 }
