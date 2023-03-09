@@ -6,16 +6,17 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon server.js",
-    "start":"node server.js",
-    "vercel-build":"npx prisma models deploy",
+    "vercel-build": "npx prisma models deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "prisma": "^4.11.0"
   },
   "dependencies": {
+    "@prisma/client": "^4.11.0",
     "bcrypt": "^5.1.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
